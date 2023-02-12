@@ -10,5 +10,6 @@ streamlit.text('Kale, Spinach & Rocket Smoothie')
 streamlit.text('Hard-Boiled Free-Range Egg')
 my_fruit_list = my_fruit_list.set_index('Fruit')
 streamlit.multiselect("pick some fruits",list(my_fruit_list.index),['Avocado','Strawberries'])
+fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 
